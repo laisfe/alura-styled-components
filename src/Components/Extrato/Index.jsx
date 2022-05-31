@@ -1,5 +1,6 @@
 import React from "react";
 import { extratoLista } from "../../info";
+import Itens from "../Itens";
 import { Botao, Box } from "../UI";
 
 const Extrato = () => {
@@ -7,10 +8,7 @@ const Extrato = () => {
     <Box>
       {extratoLista.updates.map(({ id, type, from, value, date }) => {
         return (
-          <div key={id}>
-            <div>{type}</div>
-            <div>{from}</div>
-          </div>
+          <Itens key={id} type={type} from={from} value={value} date={date} />
         );
       })}
       <Botao>Ver Mais</Botao>
