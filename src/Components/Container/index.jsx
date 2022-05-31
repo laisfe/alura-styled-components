@@ -6,7 +6,7 @@ import styledComponents from "styled-components";
 import Extrato from "../Extrato/Index";
 
 const Container = styledComponents.div`
-  background-color: #f1f1f1;
+  background-color: ${({ theme }) => theme.body};
   min-height: 90vh;
   padding: 0px 15vw;
 `;
@@ -15,6 +15,7 @@ const Conteudo = styledComponents.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: ${({ theme }) => theme.text};
 
   @media (max-width: 800px) {
     flex-direction: column;
