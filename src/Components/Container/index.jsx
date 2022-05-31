@@ -3,6 +3,7 @@ import React from "react";
 import Titulo from "../Titulo";
 import Conta from "../Conta";
 import styledComponents from "styled-components";
+import Extrato from "../Extrato/Index";
 
 const Container = styledComponents.div`
   background-color: #f1f1f1;
@@ -28,6 +29,7 @@ export default () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
+        <Extrato />
       </Conteudo>
     </Container>
   );
